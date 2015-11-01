@@ -1,0 +1,32 @@
+Initialize player 1 score to 0
+Initialize player 2 score to 0
+
+Initialize player 1 lives to 0
+Initialize player 2 lives to 0
+
+loop until both players have lives > 0
+
+  give player 1 question and prompt for answer
+    if answer correct
+      puts correct and add 1 point to score. Show scores of both players.
+  else
+    puts incorrect and minus 1 from lives. Player 1 you have x lives left.
+  end
+  if either players' lives are at 0
+    check who the winner is
+    break out of loop
+  end
+
+
+  give player 2 question and prompt for answer
+    if answer correct
+      puts correct and add 1 point to score. Show scores of both players.
+  else
+    puts incorrect and minus 1 from lives. Player 2 you have x lives left
+  end
+  if either players' lives are at 0
+    check who the winner is
+    break out of loop
+  end
+
+end

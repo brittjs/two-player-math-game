@@ -23,8 +23,12 @@ def prompt_player_for_answer(name)
     begin
       Integer(@answer)
     rescue ArgumentError
-      puts "Please enter a numeric value"
-      @answer = gets.chomp
+      begin 
+        raise InvalidInputError
+      rescue InvalidInputError
+        puts "Please enter a numeric value"
+        @answer = gets.chomp
+      end
     else
       break
     end
